@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: hsl(217, 54%, 11%);
+}
+
+.container {
+  width: 100%;
+}
+
+.main-card {
+  position: absolute;
+  padding: 1.5rem;
+  background: hsl(216, 50%, 16%);
+  width: 22%;
+  border-radius: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: hsl(217, 54%, 10%) 15px 25px 50px,
+    hsl(217, 54%, 10%) -15px 25px 50px;
+    max-width: 300px;
+    min-width: 275px;
+}
+
+.main-img {
+  background: url(images/image-equilibrium.jpg) center/cover no-repeat
+      border-box,
+    yellow;
+  height: 15rem;
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.main-img:hover {
+  background: url(images/icon-view.svg) center no-repeat,
+    linear-gradient(rgba(0, 255, 247, 0.5), rgba(0, 255, 247, 0.5)),
+    url(images/image-equilibrium.jpg) center/cover no-repeat border-box;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card-title {
+  color: white;
+  font-weight: 600;
+}
+.card-title:hover {
+  color: rgba(0, 255, 247);
+  cursor: pointer;
+}
+
+.card-text {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.eth-value {
+  display: inline-block;
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.eth-value > img,
+.eth-value > span {
+  vertical-align: middle;
+}
+
+.time-left > img,
+.time-left > span {
+  vertical-align: middle;
+}
+
+.time-left {
+  display: inline-block;
+  position: absolute;
+  right: 1.5rem;
+  color: hsl(215, 51%, 70%);
+  vertical-align: middle;
+}
+
+.line {
+  height: 1.5px;
+  background: hsl(215, 32%, 27%);
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.author-avatar {
+  display: inline-block;
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.author-text {
+  display: inline-block;
+  color: hsl(215, 51%, 70%);
+  vertical-align: middle;
+}
+.author-text > span {
+  color: white;
+}
+.author-text > span:hover {
+  color: rgba(0, 255, 247);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .main-card{
+        width: 80%;
+    }
+}
